@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PurePeel – Factory-Peeled Garlic for Sauces, Pastes, Restaurants and Kitchens</title>
+<meta name="description" content="Best-quality factory-peeled garlic for sauces, pastes, restaurants, and kitchens. 500 g to 10 kg packs, delivered anywhere.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16231a;--mut:#5d6b61;--g:#2f6b3f;--g2:#e9f2e6;--line:#e8ece8;--cream:#fbf3dc;--serif:'Fraunces',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:#fff;color:var(--ink);font:400 17px/1.65 var(--sans)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.02em}
+h1{font-size:clamp(40px,5vw,72px)}h2{font-size:clamp(32px,3.6vw,52px)}
+em{color:var(--g);font-style:italic}
+.eyebrow{font:600 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--g);margin-bottom:18px}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;background:#143d25;box-shadow:0 2px 18px #0c261733}
+.logo{font:600 24px var(--serif);color:#fff;text-decoration:none}.logo b{color:#9be0ab}
+nav{display:flex;gap:30px;align-items:center}nav a{font-size:14px;color:#c9dccd;text-decoration:none}nav a:hover{color:#fff}header .btn{background:#fff;color:#143d25!important}header .btn:hover{background:#9be0ab;color:#0c2617!important}
+.btn{display:inline-block;background:var(--g);color:#fff!important;padding:13px 26px;border-radius:99px;font-weight:500;text-decoration:none;border:0;font-size:15px;cursor:pointer;transition:.25s}.btn:hover{background:#1f4f2c;transform:translateY(-2px)}
+/* scroll story */
+.story{height:680vh;position:relative}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden}
+.stage video{position:absolute;left:50%;top:54%;width:min(120vh,70vw);height:84vh;object-fit:contain;transform:translate(-50%,-50%);mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);display:none}.stage.vid video{display:block}.stage.vid svg{display:none}
+#seq{position:absolute;left:50%;top:54%;width:min(100vh,66vw);height:84vh;transform:translate(-50%,-50%);display:none}#seq img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;opacity:0}.stage.seq #seq{display:block}.stage.seq svg,.stage.seq video{display:none}
+.stage svg{position:absolute;left:50%;top:54%;width:min(86vh,60vw);transform:translate(-50%,-50%);overflow:visible}
+.panel{position:absolute;top:50%;width:min(31vw,430px);opacity:0;will-change:transform,opacity}
+.panel.r{right:6vw}.panel.l{left:6vw}
+.panel p{color:var(--mut);margin-top:20px}.panel .btn{margin-top:28px}
+.panel .n{font:600 13px var(--sans);color:var(--g);letter-spacing:.2em;margin-bottom:14px}
+.bar{position:absolute;left:50%;bottom:30px;width:120px;height:2px;background:var(--line);transform:translateX(-50%)}.bar i{display:block;height:100%;background:var(--g);width:0}
+.hint{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);font-size:11px;letter-spacing:.25em;color:var(--mut);transition:opacity .3s}
+/* sections */
+section.s{padding:clamp(80px,11vw,160px) 7vw}.wrap{max-width:1180px;margin:auto}
+.head{max-width:640px;margin-bottom:64px}.head p{color:var(--mut);margin-top:18px}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.card{background:#fff;padding:40px 28px 36px;text-align:left;transition:background .3s}.card:hover{background:#f4f9f2}.card .tag{display:block;font:600 13px var(--sans);color:var(--g);margin-bottom:18px}
+.art img{display:none;width:100%;height:100%;object-fit:cover;object-position:center;mix-blend-mode:multiply}.art.has img{display:block}.art.has .bag{display:none}
+.card .art{height:230px;display:flex;align-items:flex-end;justify-content:center;margin-bottom:26px}.card .art img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}.card:hover .art img{transform:scale(1.05)}.card h3{font-size:28px}
+.bag{position:relative;background:repeating-radial-gradient(ellipse at 30% 70%,#fff8e3 0 9px,#f1dfae 10px 12px,#fffdf3 13px 20px);border:2px solid #cfe0cc;border-radius:12px 12px 22px 22px;box-shadow:inset 0 0 0 6px #ffffff88,0 14px 24px #00000014}
+.bag:before{content:"";position:absolute;left:-2px;right:-2px;top:-2px;height:22px;background:var(--g);border-radius:12px 12px 0 0}
+.bag span{position:absolute;left:12%;right:12%;top:34%;background:#fff;border-radius:8px;padding:6px 2px;font:600 15px var(--serif);color:var(--g);line-height:1.2;box-shadow:0 2px 8px #0001}.bag small{display:block;font:600 8px var(--sans);letter-spacing:.14em;color:var(--mut)}
+.card h3{font-size:26px}.card p{color:var(--mut);font-size:15px;margin-top:6px}
+.uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.uses div{background:#fff;padding:40px 32px}.uses h3{font-size:24px;margin-bottom:10px}.uses p{color:var(--mut);font-size:15px}.uses b{font:600 13px var(--sans);color:var(--g)}
+.why{background:radial-gradient(120% 90% at 85% 0%,#1f5a35 0%,#143d25 45%,#0c2617 100%);color:#e9f3ea}.why h2,.why h3{color:#fff}.why em{color:#9be0ab}.why .eyebrow,.why .points b{color:#9be0ab}.why .head p,.why .points p{color:#b7cdbc}.why .points>div{border-top:1px solid #ffffff26;padding-top:22px}.points{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:40px}.points h3{font-size:22px;margin:8px 0}.points p{color:var(--mut);font-size:15px}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:8vw;align-items:start}
+.contact .info p{color:var(--mut);margin-top:18px}.contact .info .loc{margin-top:36px;color:var(--ink)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;border:1px solid var(--line);border-radius:24px;padding:36px;box-shadow:0 30px 80px #2f6b3f12}
+label{font-size:13px;font-weight:500;display:grid;gap:6px}label.w,.w{grid-column:1/-1}
+input,select,textarea{font:inherit;font-size:15px;padding:13px 15px;border:1px solid #d7ddd7;border-radius:12px;background:#fff;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:2px solid var(--g);border-color:transparent}
+.hp{position:absolute;left:-9999px}#st{font-size:14px;min-height:22px}
+footer{padding:40px 7vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px;color:var(--mut)}
+.rv{opacity:0;transform:translateY(30px);transition:1s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){nav a:not(.btn){display:none}.panel{width:auto;left:7vw!important;right:7vw!important;top:auto;bottom:9vh}.panel h1{font-size:34px}.panel h2{font-size:28px}.panel p{margin-top:10px;font-size:15px}.stage svg{width:92vw;top:36%}.contact{grid-template-columns:1fr}form{grid-template-columns:1fr;padding:24px}}
+</style></head><body>
+<header><a class="logo" href="#top">Pure<b>Peel</b></a><nav><a href="#packs">Packs</a><a href="#uses">Uses</a><a href="#why">Why us</a><a class="btn" href="#contact">Get a quote</a></nav></header>
+
+<div class="story" id="top"><div class="stage">
+<div id="seq"><img src="assets/step1.jpg" alt="Whole garlic bulb"><img src="assets/step2.jpg" alt="Garlic being peeled"><img src="assets/step3.jpg" alt="Peeled garlic cloves"><img src="assets/step4.jpg" alt="Peeled garlic packed in a 1 kg pack"></div>
+<video id="vid" src="assets/garlic.mp4" muted playsinline preload="auto"></video>
+<svg id="art" viewBox="0 0 600 600" aria-label="A garlic bulb peels, its cloves fall into a sealed 1 kg pack">
+<defs>
+<linearGradient id="cl" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fffef8"/><stop offset=".6" stop-color="#fbefc8"/><stop offset="1" stop-color="#e6cd92"/></linearGradient>
+<linearGradient id="sk" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fffdf7"/><stop offset=".5" stop-color="#eadcc6"/><stop offset="1" stop-color="#c9ae88"/></linearGradient>
+<linearGradient id="pb" x1="0" x2="1"><stop offset="0" stop-color="#d9ead4"/><stop offset=".5" stop-color="#f4faf1"/><stop offset="1" stop-color="#cfe3ca"/></linearGradient>
+<linearGradient id="gl" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset=".35" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity=".3"/></linearGradient>
+<filter id="bl"><feGaussianBlur stdDeviation="14"/></filter>
+<path id="c" d="M0 0C-34-27-30-76 0-100 30-76 34-27 0 0Z"/>
+</defs>
+<ellipse id="sh" cx="300" cy="528" rx="170" ry="16" fill="#2f6b3f" opacity=".16" filter="url(#bl)"/>
+<g id="pback" opacity="0"><path d="M205 250H395V500Q395 520 375 520H225Q205 520 205 500Z" fill="url(#pb)" stroke="#bcd5b6" stroke-width="2"/></g>
+<g id="cloves"></g>
+<g id="pfront" opacity="0"><path d="M205 250H395V500Q395 520 375 520H225Q205 520 205 500Z" fill="url(#gl)"/>
+<rect x="228" y="282" width="144" height="82" rx="10" fill="#fff" stroke="#e3ece1"/>
+<text x="300" y="312" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="22" fill="#2f6b3f">PurePeel</text>
+<text x="300" y="330" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" letter-spacing="2" fill="#5d6b61">PEELED GARLIC</text>
+<text x="300" y="354" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="600" font-size="20" fill="#16231a">1 KG</text></g>
+<g id="seal" opacity="0"><rect x="203" y="236" width="194" height="26" rx="4" fill="#2f6b3f"/><path d="M215 249H385" stroke="#fff" stroke-opacity=".5" stroke-dasharray="3 6"/></g>
+<g id="skin">
+<path id="pL" d="M300 90C250 120 190 190 185 270 180 350 225 410 300 430 255 340 262 190 300 90Z" fill="url(#sk)" stroke="#c4a880" stroke-width="2"/>
+<path id="pR" d="M300 90C350 120 410 190 415 270 420 350 375 410 300 430 345 340 338 190 300 90Z" fill="url(#sk)" stroke="#c4a880" stroke-width="2"/>
+<path id="pF" d="M300 100C252 185 250 340 300 428 350 340 348 185 300 100Z" fill="url(#sk)" stroke="#c4a880" stroke-width="2"/>
+<path id="tip" d="M300 92C296 60 304 40 312 22" stroke="#c9ae88" stroke-width="7" stroke-linecap="round" fill="none"/>
+<path d="M300 110Q276 270 300 420M300 110Q324 270 300 420M300 110Q252 270 296 420M300 110Q348 270 304 420" stroke="#b99b72" stroke-opacity=".35" fill="none"/>
+</g></svg>
+
+<div class="panel r" id="p1"><div class="eyebrow">Peeled garlic · Delivered anywhere</div><h1>Garlic, <em>peeled</em> for your business.</h1><p>Factory-peeled garlic for sauces, pastes, restaurants, and kitchens. Scroll to watch it happen.</p></div>
+<div class="panel l" id="p2"><div class="n">01 — PEELED</div><h2>Every skin, <em>gone.</em></h2><p>Whole bulbs are separated and peeled at our own factory, so your team never has to touch a peel.</p></div>
+<div class="panel r" id="p3"><div class="n">02 — PACKED</div><h2>Sealed in <em>1 kg</em> packs and beyond.</h2><p>From café-sized 500 g and 1 kg packs up to 10 kg for sauce and paste makers.</p><a class="btn" href="#contact">Request a quote</a></div>
+<div class="hint" id="hint">SCROLL ↓</div><div class="bar"><i id="bi"></i></div>
+</div></div>
+
+<section class="s" id="packs"><div class="wrap"><div class="head rv"><div class="eyebrow">Pack sizes</div><h2>Choose the pack that <em>fits your kitchen.</em></h2><p>Standard sizes below. Need something different? We can discuss custom packing for your volume.</p></div>
+<div class="packs">
+<div class="card rv"><b class="tag">01</b><div class="art"><img src="assets/pack-500g.jpg" alt="500 g peeled garlic tray" onload="this.parentNode.classList.add('has')"><div class="bag" style="width:96px;height:110px"><span>500 g<small>PEELED GARLIC</small></span></div></div><h3>500 g</h3><p>Home cooks, sampling and first orders</p></div>
+<div class="card rv"><b class="tag">02</b><div class="art"><img src="assets/pack-1kg.jpg" alt="1 kg peeled garlic pack" onload="this.parentNode.classList.add('has')"><div class="bag" style="width:96px;height:140px"><span>1 KG<small>PEELED GARLIC</small></span></div></div><h3>1 kg</h3><p>Cafés, small kitchens and trial orders</p></div>
+<div class="card rv"><b class="tag">03</b><div class="art"><img src="assets/pack-5kg.jpg" alt="5 kg peeled garlic pack" onload="this.parentNode.classList.add('has')"><div class="bag" style="width:120px;height:178px"><span>5 KG<small>PEELED GARLIC</small></span></div></div><h3>5 kg</h3><p>Restaurants, caterers and cloud kitchens</p></div>
+<div class="card rv"><b class="tag">04</b><div class="art"><img src="assets/pack-10kg.jpg" alt="10 kg peeled garlic pack" onload="this.parentNode.classList.add('has')"><div class="bag" style="width:146px;height:218px"><span>10 KG<small>PEELED GARLIC</small></span></div></div><h3>10 kg</h3><p>High-volume kitchens and distributors</p></div>
+</div></div></section>
+
+<section class="s" id="uses" style="padding-top:0"><div class="wrap"><div class="head rv"><div class="eyebrow">Made for</div><h2>One ingredient, <em>every menu.</em></h2></div>
+<div class="uses rv"><div><b>01</b><h3>Sauces</h3><p>Consistent peeled cloves for sauce makers and bottlers.</p></div><div><b>02</b><h3>Garlic paste</h3><p>Ready for grinding. No peeling labour, no wasted prep time.</p></div><div><b>03</b><h3>Restaurants</h3><p>Hotels, restaurants and cloud kitchens that cook garlic-heavy dishes daily.</p></div><div><b>04</b><h3>Caterers</h3><p>Reliable volume for events, canteens and large catering orders.</p></div></div></div></section>
+
+<section class="s why" id="why"><div class="wrap"><div class="head rv"><div class="eyebrow">Why peeled garlic matters</div><h2>Peeling is the slowest part of <em>cooking with garlic.</em></h2><p>Every bulb has to be broken, soaked or scraped, and the skins end up as waste. Ready-peeled garlic removes that step completely.</p></div>
+<div class="points"><div class="rv"><b>01</b><h3>Saves labour and time</h3><p>Hours of daily peeling become zero. Your team can focus on cooking and production.</p></div><div class="rv"><b>02</b><h3>No peel waste, no mess</h3><p>Skins stay at our factory. Your kitchen or plant stays cleaner and easier to manage.</p></div><div class="rv"><b>03</b><h3>Consistent every batch</h3><p>Even, ready-to-use cloves make your sauces and pastes taste the same every time.</p></div><div class="rv"><b>04</b><h3>Easier to plan costs</h3><p>You buy usable garlic by the kilo, so you know exactly what you are paying for.</p></div></div>
+<div class="head rv" style="margin:110px 0 56px"><div class="eyebrow">Why choose us</div><h2>Best quality, <em>every order.</em></h2></div>
+<div class="points"><div class="rv"><b>01</b><h3>Quality comes first</h3><p>We select good garlic and peel it carefully, so what reaches you is clean, firm, and fresh.</p></div><div class="rv"><b>02</b><h3>Direct from our factory</h3><p>No middlemen. You deal with the people who peel and pack your garlic.</p></div><div class="rv"><b>03</b><h3>Packs that fit you</h3><p>From 500 g to 10 kg, packed the way your business needs it.</p></div><div class="rv"><b>04</b><h3>Delivered anywhere</h3><p>Tell us your location and we will arrange delivery to you.</p></div></div></div></section>
+
+<section class="s" id="contact"><div class="wrap contact"><div class="info rv"><div class="eyebrow">Contact</div><h2>Tell us what you <em>need.</em></h2><p>Share your pack size and monthly quantity. Your enquiry goes straight to our inbox and we’ll reply by email.</p><p class="loc"><b>Delivery</b><br>We deliver anywhere. Mention your city in the message.</p></div>
+<form id="f" class="rv"><input class="hp" name="website" tabindex="-1" autocomplete="off">
+<label>Name *<input name="name" required></label><label>Email *<input name="email" type="email" required></label>
+<label>Phone<input name="phone" type="tel"></label><label>Business<input name="business" placeholder="Restaurant, brand…"></label>
+<label>Pack size<select name="pack"><option>500 g</option><option>1 kg</option><option>5 kg</option><option>10 kg</option><option>Custom size</option></select></label><label>Monthly quantity<input name="quantity" placeholder="e.g. 200 kg"></label>
+<label class="w">Message *<textarea name="message" rows="4" required></textarea></label>
+<div class="w"><button class="btn" id="sb">Send enquiry</button></div><div class="w" id="st" role="status"></div></form></div></section>
+<footer><span>© <span id="y"></span> PurePeel</span><span>Factory address: Zirakpur, Punjab, India</span></footer>
+
+<script>
+const $=id=>document.getElementById(id),L=(a,b,t)=>a+(b-a)*t,cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),
+S=(a,b,p)=>{const t=cl((p-a)/(b-a));return t*t*(3-2*t)};
+$('y').textContent=new Date().getFullYear();
+// 9 cloves: A = inside bulb, B = spread out, C = inside pack
+const N=9,C=[[245,495,-14],[285,497,8],[325,497,-8],[365,495,14],[265,458,10],[305,460,-10],[345,458,12],[285,423,-8],[325,423,9]],
+cv=[...Array(N)].map((_,i)=>{const k=i-4,u=document.createElementNS('http://www.w3.org/2000/svg','use');u.setAttribute('href','#c');u.setAttribute('fill','url(#cl)');u.setAttribute('stroke','#d9c07f');u.setAttribute('stroke-width','1.2');$('cloves').appendChild(u);
+return{u,A:[300,420,k*13,2.55-Math.abs(k)*.1],B:[300+k*52,400+Math.abs(k)*(k*k*.9)+k*k*3,k*13,1.6],C:[...C[i],.72]}});
+const P=[[$('p1'),0,.04,.24,.3],[$('p2'),.3,.36,.55,.61],[$('p3'),.66,.72,1.5,2]];
+let tgt=0,cur=0;const SQ=[...document.querySelectorAll('#seq img')];SQ[0].addEventListener('load',()=>ST0.classList.add('seq'));const ST0=document.querySelector('.stage');const V=$('vid'),ST=document.querySelector('.stage');const goV=()=>{ST.classList.add('vid');V.pause()};V.addEventListener('loadedmetadata',goV);if(V.readyState>=1)goV();V.addEventListener('error',()=>ST.classList.remove('vid'));
+const SH=()=>innerWidth>860?innerWidth*.17:0;
+const draw=p=>{
+ const sx=SH()*(-1+2*S(.27,.35,p)-2*S(.58,.68,p));
+ V.style.transform=`translate(calc(-50% + ${sx}px),-50%)`;$('seq').style.transform=`translate(calc(-50% + ${sx}px),-50%)`;
+ if(ST.classList.contains('seq'))SQ.forEach((im,i)=>{const d=p*3-i;im.style.opacity=Math.max(0,1-Math.abs(d));im.style.transform=`scale(${1+d*.06})`});
+ if(ST.classList.contains('vid')&&V.duration&&!V.seeking){const t=cl(p/.93)*(V.duration-.05);if(Math.abs(V.currentTime-t)>.008)V.currentTime=t}
+ const pe=S(.02,.3,p),sp=S(.3,.5,p),po=S(.52,.76,p),pk=S(.46,.6,p),se=S(.78,.9,p);
+ $('pL').setAttribute('transform',`translate(${-pe*170} ${pe*50}) rotate(${-pe*38} 185 430)`);
+ $('pR').setAttribute('transform',`translate(${pe*170} ${pe*50}) rotate(${pe*38} 415 430)`);
+ $('pF').setAttribute('transform',`translate(0 ${-pe*30}) scale(${1+pe*.1})`);
+ $('tip').setAttribute('transform',`translate(0 ${-pe*20})`);
+ $('skin').style.opacity=1-S(.16,.34,p);
+ $('skin').setAttribute('transform',`translate(0 ${S(.3,.5,p)*40})`);
+ cv.forEach(c=>{const a=c.A,b=c.B,d=c.C;
+  const x=L(L(a[0],b[0],sp),d[0],po),y=L(L(a[1],b[1],sp),d[1],po)-Math.sin(po*Math.PI)*60,r=L(L(a[2],b[2],sp),d[2],po),s=L(L(a[3],b[3],sp),d[3],po);
+  c.u.setAttribute('transform',`translate(${x} ${y}) rotate(${r}) scale(${s})`)});
+ $('pback').style.opacity=$('pfront').style.opacity=pk;
+ $('pback').setAttribute('transform',`translate(0 ${(1-pk)*40})`);$('pfront').setAttribute('transform',`translate(0 ${(1-pk)*40})`);
+ $('seal').style.opacity=se;$('seal').setAttribute('transform',`translate(0 ${(1-se)*-34})`);
+ $('sh').setAttribute('rx',L(130,185,pk));
+ P.forEach(([el,a,b,c,d])=>{const o=S(a,b,p)*(1-S(c,d,p)),dir=el.classList.contains('r')?1:-1;
+  el.style.opacity=o;el.style.transform=`translateY(calc(-50% + ${(1-S(a,b,p))*40}px)) translateX(${dir*(1-S(a,b,p))*30}px)`});
+ $('bi').style.width=p*100+'%';$('hint').style.opacity=p<.03?1:0};
+const read=()=>{const s=document.querySelector('.story');tgt=cl(-s.getBoundingClientRect().top/(s.offsetHeight-innerHeight))};
+let lt=performance.now();(function loop(now){const dt=Math.min(.05,(now-lt)/1000||.016);lt=now;cur+=(tgt-cur)*(1-Math.exp(-dt/.13));if(Math.abs(tgt-cur)<.0002)cur=tgt;draw(cur);requestAnimationFrame(loop)})(lt);
+addEventListener('scroll',read,{passive:true});addEventListener('resize',read);read();
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.15});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+$('f').addEventListener('submit',async e=>{e.preventDefault();const st=$('st'),b=$('sb');b.disabled=true;b.textContent='Sending…';st.textContent='';
+ try{const r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(e.target)))});const d=await r.json();
+ if(!r.ok)throw Error(d.error||'Something went wrong.');st.style.color='#2f6b3f';st.textContent='Thank you! Your enquiry has been sent. We’ll reply by email soon.';e.target.reset()}
+ catch(x){st.style.color='#b3261e';st.textContent=x.message}finally{b.disabled=false;b.textContent='Send enquiry'}});
+</script></body></html>
